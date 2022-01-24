@@ -4,129 +4,127 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-li {
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
   list-style: none;
+  box-sizing: border-box;
+}
 
+nav{
+  background: #ffffff;
+  height: 80px;
+  width: 100%;
+  
 }
-p{
-  color: #E2E8F0;
+nav img{
+    width: 80px;
+    height: 55px;
+    position: absolute;
+    top: 10px;
+    left: 8%;
 }
-a {
-  text-decoration: none;
-  color: black;
-  text-decoration: none;
-  padding: 10px;
+nav ul{
+  float: right;
+  margin-right: 50px;
+  
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+}
+nav ul li a{
+  position: relative;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  padding: 10px 10px;
   border-radius: 3px;
-
+  text-transform: uppercase;
+  font-family: monospace;
 }
-.header{
-border-bottom: 1px solid #E2E8F0;
+nav ul li a:before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
 }
+nav ul li a:hover:before{
+  transform: scaleX(1);
+  transform-origin: left;}
 
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
-  }
-.hamburger {
+label #btn,
+label #cancel{
+
+color: rgb(0, 0, 0);
+font-size: 30px;
+float: right;
+line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
 display: none;
 }
-.logo{
-  width: 60px;
-  cursor: pointer;
-  margin-left: 60px;
-  
+#check{
+  display: none;
+}
+@media (max-width: 1118px) {
+  nav img{
+    left: 8%;
   }
-.bar {
-display: block;
-width: 25px;
-height: 3px;
-margin: 10px auto;
--webkit-transition: all 0.3s ease-in-out;
-transition: all 0.3s ease-in-out;
-background-color: #101010;
 }
-.nav-menu {
-
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-   z-index: 9999;
+@media (max-width: 944px) {
+  nav img{
+    left: 6%;
+    top: 10px;
+    width: 80px;
+    height: 55px;
   }
-  
-  .nav-item {
-    margin-top: 12px;
-    margin-right: 40px;
-    width: 50%;
-    font-family: monospace;
-    /* font-family: 'Nunito Sans', sans-serif; */
-    /* font-family: 'Lato', sans-serif; */
-    font-size: 17px;
-  
+  nav ul li a{
+    z-index: 9999;
+      font-size: 17px;
+  }
+}
+@media (max-width: 860px) {
+  label #btn{
+      display: block;
+  }
+  ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #ffffff;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
   }
 
-.inac{
-font-size: large;
-font-weight: 400;
-color:#4e4e50;
+  nav ul li a{
+      font-size: 20px;
+  }
+  #check:checked ~ ul{
+      left: 0;
+    }
+    #check:checked ~ label #btn{
+      display: none;
+    }
+    #check:checked ~ label #cancel{
+      display: block;
+    }
 }
 
-.inac:hover{
-color: black;
-text-decoration: underline;
-text-decoration-style: solid;
-text-decoration-thickness: 4px;
-}
-a.active {
-color: white;
-background-color: black;
-font-size: large;
-
-}
-
-@media only screen and (max-width: 768px) {
-.nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    flex-direction: column;
-    background-color: #fff;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow:
-        0 10px 27px rgba(0, 0, 0, 0.05);
-}
-
-.nav-menu.active {
-    left: 0;
-}
-
-.nav-item {
-    margin: 1.5rem 0;
-}
-
-.hamburger {
-    display: block;
-    cursor: pointer;
-}
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1) {
-  transform: translateY(4px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(3) {
-  transform: translateY(-4px) rotate(-45deg);
-}
-
-}
 .box {
   position: absolute;
   top: 12%;
@@ -135,6 +133,7 @@ font-size: large;
   width: 94%;
   height: 80%;
   background-color: #1a1a1a;
+  z-index:-9999;
 }
 .logo_white {
   position: absolute;
@@ -195,6 +194,7 @@ font-size: large;
   background-color: #1a1a1a;
   display: flex;
   animation: slideUp 1s ease-in-out;
+  z-index:-9999;
 }
 .who {
   color: #E2E8F0;
