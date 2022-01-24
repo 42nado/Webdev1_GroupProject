@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/gallery_style.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+    <title>Perfect Click</title>
+  </head>
+  <body>
+        <nav>
+          <input type="checkbox" id="check">
+          <label for="check">
+          <i class="fas fa-bars" id="btn"></i>
+          <i class="fas fa-times" id="cancel"></i>
+          </label>
+      <img src="../Images/logoblack.png">
+        <ul>
+          <li><a class="inac" href="Home.html">Home</a></li>
+          <li><a class="inac"href="Profile.html">Profile</a></li>
+          <li><a class="active" href="Gallery.html">Gallery</a></li>
+          <li><a class="inac" href="contact.html">Contact</a></li>
+          <li><a class="inac" href="AboutUs.html">About</a></li>
+        </ul>
+      </nav>
+    <!-- <header class="header">
+      <nav class="navbar">
+          <img class="logo" src="../Images/logoblack.png" alt="logo">
+          <ul class="nav-menu">
+              <li class="nav-item">
+                  <a href="Home.html" class="inac">HOME</a>
+              </li>
+              <li class="nav-item">
+                  <a href="Profile.html" class="inac">PROFILE</a>
+              </li>
+              <li class="nav-item">
+                  <a href="contact.html" class="inac">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                  <a href="Gallery.html" class="active">GALLERY</a>
+              </li>
+              <li class="nav-item">
+                <a href="AboutUs.html" class="inac">ABOUT</a>
+              </li>
+          </ul>
+          <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </nav>
+</header>
+<script src="../js/About.js"></script> -->
+
+      <div class="box">
+        <div><h1 class="title">GALLERY</h1></div>
+
+        <!-- <div class="wrapper">
+          <a class =" item" href="../Pictures/1.webp" data-fancybox="gallery" data-caption="image one">
+              <img src="../Pictures/1.webp" alt="">
+          </a>
+          <a class =" item" href="../Pictures/3.JPG" data-fancybox="gallery" data-caption="image one">
+            <img src="../Pictures/3.JPG" alt="">
+          </a>
+          <a class =" item" href="../Pictures/4.jpg" data-fancybox="gallery" data-caption="image one">
+            <img src="../Pictures/4.jpg" alt="">
+          </a>
+          <a class =" item" href="../Pictures/5.jpg" data-fancybox="gallery" data-caption="image one">
+            <img src="../Pictures/5.jpg" alt="">
+          </a>
+          <a class =" item" href="../Pictures/6.jpg" data-fancybox="gallery" data-caption="image one">
+            <img src="../Pictures/6.jpg" alt="">
+          </a>
+          <a class =" item" href="../Pictures/1.webp" data-fancybox="gallery" data-caption="image one">
+            <img src="../Pictures/1.webp" alt="">
+          </a>
+      </div> -->
+        <!-- <div class="container-fluid ">
+          
+          <div class="row mt-1 p-0">
+            
+           <div class="item col-sm-6 col-md-3  mb-3">
+             <a href="../Pictures/1.jpg" class="fancybox"  data-fancybox="gallery1" data-caption="Caption #1">
+               <img src="../Pictures/1.jpg" width="100%" height="100%">
+             </a>
+            </div>
+            <div class="item col-sm-6 col-md-3 mb-3">
+              <a href="../Pictures/6.jpg" class="fancybox" data-fancybox="gallery1" data-caption="Caption #1">
+                <img src="../Pictures/6.jpg" width="100%" height="100%">
+              </a>
+             </div>
+             <div class="item col-sm-6 col-md-3 mb-3">
+              <a href="../Pictures/3.jpg" class="fancybox" data-fancybox="gallery1" data-caption="Caption #1">
+                <img src="../Pictures/3.jpg" width="100%" height="100%">
+              </a>
+             </div>
+             <div class="item col-sm-6 col-md-3 mb-3">
+              <a href="../Pictures/4.jpg" class="fancybox" data-fancybox="gallery1" data-caption="Caption #1">
+                <img src="../Pictures/4.jpg" width="100%" height="100%">
+              </a>
+             </div>
+             <div class="item col-sm-6 col-md-3 mb-3">
+              <a href="../Pictures/5.jpg" class="fancybox" data-fancybox="gallery1" data-caption="Caption #1">
+                <img src="../Pictures/5.jpg" width="100%" height="100%">
+              </a>
+             </div>
+             <div class="item col-sm-6 col-md-3 mb-3">
+              <a href="../Pictures/7.jpg" class="fancybox" data-fancybox="gallery1" data-caption="Caption #1">
+                <img src="../Pictures/7.jpg" width="100%" height="100%">
+              </a>
+             </div>
+             <div class="item col-sm-6 col-md-3 mb-3">
+              <a href="../Pictures/8.jpg" class="fancybox" data-fancybox="gallery1" data-caption="Caption #1">
+                <img src="../Pictures/8.jpg" width="100%" height="100%">
+              </a>
+             </div>
+             <div class="item col-sm-6 col-md-3 mb-3">
+              <a href="../Pictures/10.jpg" class="fancybox" data-fancybox="gallery1" data-caption="Caption #1">
+                <img src="../Pictures/10.jpg" width="100%" height="100%">
+              </a>
+             </div>
+             <div class="item col-sm-6 col-md-3 mb-3">
+              <a href="../Pictures/15.jpg" class="fancybox" data-fancybox="gallery1" data-caption="Caption #1">
+                <img src="../Pictures/15.jpg" width="100%" height="100%">
+              </a>
+             </div>
+             <div class="item col-sm-6 col-md-3 mb-3">
+              <a href="../Pictures/16.jpg" class="fancybox" data-fancybox="gallery1" data-caption="Caption #1">
+                <img src="../Pictures/16.jpg" width="100%" height="100%">
+              </a>
+             </div>
+             <div class="item col-sm-6 col-md-3 mb-3">
+              <a href="../Pictures/17.jpg" class="fancybox" data-fancybox="gallery1" data-caption="Caption #1">
+                <img src="../Pictures/17.jpg" width="95%" height="95%">
+              </a>
+             </div>
+             <div class="item col-sm-6 col-md-3 mb-3">
+              <a href="../Pictures/18.jpg" class="fancybox" data-fancybox="gallery1" data-caption="Caption #1">
+                <img src="../Pictures/18.jpg" width="95%" height="95%">
+              </a>
+             </div>
+             <div class="item col-sm-6 col-md-3 mb-3">
+              <a href="../Pictures/20.jpg" class="fancybox" data-fancybox="gallery1" data-caption="Caption #1">
+                <img src="../Pictures/20.jpg" width="95%" height="95%">
+              </a>
+             </div>
+             <div class="item col-sm-6 col-md-3 mb-3">
+              <a href="../Pictures/25.jpg" class="fancybox" data-fancybox="gallery1" data-caption="Caption #1">
+                <img src="../Pictures/25.jpg" width="95%" height="95%">
+              </a>
+             </div>
+             <div class="item col-sm-6 col-md-3 mb-3">
+              <a href="../Pictures/27.jpg" class="fancybox" data-fancybox="gallery1" data-caption="Caption #1">
+                <img src="../Pictures/27.jpg" width="95%" height="95%">
+              </a>
+             </div>
+             <div class="item col-sm-6 col-md-3 mb-3">
+              <a href="../Pictures/28.jpg" class="fancybox" data-fancybox="gallery1" data-caption="Caption #1">
+                <img src="../Pictures/28.jpg" width="95%" height="95%">
+              </a>
+             </div>
+             <div class="item col-sm-6 col-md-3 mb-3">
+              <a href="../Pictures/30.jpg" class="fancybox" data-fancybox="gallery1" data-caption="Caption #1">
+                <img src="../Pictures/30.jpg" width="95%" height="95%">
+              </a>
+             </div>
+             <div class="item col-sm-6 col-md-3 mb-3">
+              <a href="../Pictures/31.jpg" class="fancybox" data-fancybox="gallery1" data-caption="Caption #1">
+                <img src="../Pictures/31.jpg" width="95%" height="95%">
+              </a>
+             </div>
+             <div class="item col-sm-6 col-md-3 mb-3">
+              <a href="../Pictures/33.jpg" class="fancybox" data-fancybox="gallery1" data-caption="Caption #1">
+                <img src="../Pictures/33.jpg" width="95%" height="95%">
+              </a>
+             </div>
+             <div class="item col-sm-6 col-md-3 mb-3">
+              <a href="../Pictures/35.jpg" class="fancybox" data-fancybox="gallery1" data-caption="Caption #1">
+                <img src="../Pictures/35.jpg" width="95%" height="95%">
+              </a>
+             </div><div class="item col-sm-6 col-md-3 mb-3">
+              <a href="../Pictures/36.jpg" class="fancybox" data-fancybox="gallery1" data-caption="Caption #1">
+                <img src="../Pictures/36.jpg" width="95%" height="95%">
+              </a>
+             </div>
+          </div>
+         </div> -->
+
+
+         <main class="main">
+          <div class="container">
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/1.webp" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="..//Pictures/1.webp" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/3.JPG" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="..//Pictures/3.JPG" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/4.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/4.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="..//Pictures/5.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/5.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/6.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/7.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/8.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/8.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/10.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/10.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/13.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/13.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/15.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/15.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/16.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/16.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/17.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/17.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/6.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/6.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/18.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/18.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/20.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/20.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/25.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/25.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/27.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/27.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/28.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/28.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/30.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/30.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/31.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/31.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/32.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/32.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/33.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/33.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/35.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/36.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/37.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/37.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/39.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/39.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/40.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/40.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/41.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/41.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/43.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/43.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/44.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/44.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/46.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/46.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/47.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/47.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/49.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/49.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/51.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/51.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/52.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/52.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/53.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/53.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/54.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/54.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a href="../Pictures/56.jpg" data-fancybox="gallery" data-caption="Caption Images 1">
+                  <img src="../Pictures/56.jpg" alt="Image Gallery">
+                </a>
+              </div>
+            </div>
+          </div>
+        </main>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <!-- <script src="../jquery.fancybox.min.js"></script> -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+         <script>
+          $(' [data-fancybox]').fancybox ({
+              animationEffect : "zoom-in-out",
+              TransitionEffect : "zoom-in-out",
+              Loop : false,
+              protect: true,
+              animationDuration: 366,
+              transitionDuration: 1000,
+              buttons: [
+                "zoom",
+                "share",
+                "slideShow",
+                "fullScreen",
+                //"download",
+                "thumbs",
+                "close"
+              ]
+          })
+        </script>
+             
+        <!-- <div class="gallery">
+            <a href="../Pictures/1.JPG"><img src="../Pictures/1.JPG" /></a>
+            <a href="../Pictures/3.JPG"><img src="../Pictures/3.JPG" /></a>
+            <a href="../Pictures/4.jpg"><img src="../Pictures/4.jpg" /></a>
+            <a href="../Pictures/5.jpg"><img src="../Pictures/5.jpg" /></a>
+            <a href="../Pictures/6.jpg"><img src="../Pictures/6.jpg" /></a>
+            <a href="../Pictures/7.jpg"><img src="../Pictures/7.jpg" /></a>
+            <a href="../Pictures/8.jpg"><img src="../Pictures/8.jpg" /></a>
+            <a href="../Pictures/10.jpg"><img src="../Pictures/10.jpg" /></a>
+            <a href="../Pictures/13.jpg"><img src="../Pictures/13.jpg" /></a>
+            <a href="../Pictures/15.jpg"><img src="../Pictures/15.jpg" /></a>
+            <a href="../Pictures/16.jpg"><img src="../Pictures/16.jpg" /></a>
+            <a href="../Pictures/17.jpg"><img src="../Pictures/17.jpg" /></a>
+            <a href="../Pictures/18.jpg"><img src="../Pictures/18.jpg" /></a>
+            <a href="../Pictures/20.jpg"><img src="../Pictures/20.jpg" /></a>
+            <a href="../Pictures/25.jpg"><img src="../Pictures/25.jpg" /></a>
+            <a href="../Pictures/27.jpg"><img src="../Pictures/27.jpg" /></a>
+            <a href="../Pictures/28.jpg"><img src="../Pictures/28.jpg" /></a>
+            <a href="../Pictures/30.jpg"><img src="../Pictures/30.jpg" /></a>
+            <a href="../Pictures/31.jpg"><img src="../Pictures/31.jpg" /></a>
+            <a href="../Pictures/32.jpg"><img src="../Pictures/32.jpg" /></a>
+            <a href="../Pictures/33.jpg"><img src="../Pictures/33.jpg" /></a>
+            <a href="../Pictures/35.jpg"><img src="../Pictures/35.jpg" /></a>
+            <a href="../Pictures/36.jpg"><img src="../Pictures/36.jpg" /></a>
+            <a href="../Pictures/37.jpg"><img src="../Pictures/37.jpg" /></a>
+            <a href="../Pictures/38.jpg"><img src="../Pictures/38.jpg" /></a>
+            <a href="../Pictures/39.jpg"><img src="../Pictures/39.jpg" /></a>
+            <a href="../Pictures/40.jpg"><img src="../Pictures/40.jpg" /></a>
+            <a href="../Pictures/41.jpg"><img src="../Pictures/41.jpg" /></a>
+            <a href="../Pictures/43.jpg"><img src="../Pictures/43.jpg" /></a>
+            <a href="../Pictures/44.jpg"><img src="../Pictures/44.jpg" /></a>
+            <a href="../Pictures/46.jpg"><img src="../Pictures/46.jpg" /></a>
+            <a href="../Pictures/47.jpg"><img src="../Pictures/47.jpg" /></a>
+        </div> -->
+      </div>
+    </div>
+  </body>
+</html>
